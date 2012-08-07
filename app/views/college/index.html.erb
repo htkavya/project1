@@ -1,0 +1,18 @@
+<table>
+	<tr>
+		<th>ID</th>
+		<th>NAME</th>
+		<th>ADDRESS</th>
+	</tr>
+	<%@stu.each do |i|%>
+	<tr>
+		<td><%=i.id%></td>
+		<td><%=i.name%></td>
+		<td><%=i.address%></td>
+		<td><%=link_to 'delete',:action=>'delete',:id=>i.id%></td>
+		<td><%=link_to 'new value',:action=>'snew',:id=>i.id%></td>
+	</tr>
+
+   <%end%>
+</table>
+<%=link_to 'new',:action=>'new'%>

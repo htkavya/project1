@@ -1,0 +1,4 @@
+<%=form_for :sub,:url=>{:action=>'screate',:id=>@n.id} do |i|%>
+NAME:<%=i.text_field:name%>
+<%=i.submit 'SAVE'%>
+<%end%>

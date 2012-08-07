@@ -1,0 +1,5 @@
+<%=form_for :stu,:url=>{:action=>'create',:id=>@m.id} do |i|%>
+NAME:<%=i.text_field:name%>
+ADDRESS:<%=i.text_field:address%>
+<%=i.submit 'SAVE'%>
+<%end%>

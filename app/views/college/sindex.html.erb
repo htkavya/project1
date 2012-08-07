@@ -1,0 +1,17 @@
+
+<table>
+	<tr>
+		<th>ID</th>
+		<th>NAME</th>
+	</tr>
+	<%@sub.each do |i|%>
+	<tr>
+		
+		<td><%=i.id%></td>
+		<td><%=i.name%></td>
+		<td><%=link_to "delete",:action=>'sdelete',:id=>i.id%></td>
+		<td><%=link_to 'new value',:action=>'new',:id=>i.id%></td>
+    </tr>
+   <%end%>
+</table>
+<%=link_to 'new',:action=>'snew'%>
